@@ -6,7 +6,7 @@ import data from '$lib/db.json'
 
 export function load() {
     let gat = JSON.stringify(data)
-    console.log("sdubgbskjgbksjdb" + data[1] + "Yes it is printed")
+    console.log("sdubgbskjgbksjdb" + data[0] + "Yes it is printed")
     return {
         gat
     }
