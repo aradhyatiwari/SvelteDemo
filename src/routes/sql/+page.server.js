@@ -1,5 +1,5 @@
 // @ts-nocheck
-
+export const prerender = true;
 import PrismaClientPkg from "@prisma/client"
 const PrismaClient = PrismaClientPkg.PrismaClient;
 const prisma = new PrismaClient()
