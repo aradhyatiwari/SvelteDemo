@@ -22,7 +22,7 @@ export function load() {
         // })
 
         const allUsers = await prisma.user.findMany({
-            where: { id: 1 },
+
             include: {
                 posts: true,
                 profile: true,
