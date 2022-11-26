@@ -3,7 +3,7 @@
 import PrismaClientPkg from "@prisma/client"
 const PrismaClient = PrismaClientPkg.PrismaClient;
 const prisma = new PrismaClient()
-let result;
+let result = {};
 
 export function load() {
     async function main() {
@@ -21,13 +21,7 @@ export function load() {
         //     },
         // })
 
-        const allUsers = await prisma.user.findMany({
-
-            include: {
-                posts: true,
-                profile: true,
-            },
-        })
+        const allUsers = await prisma.user.findMany()
 
         console.dir(allUsers, { depth: null })
         result = allUsers;
