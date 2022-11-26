@@ -8,18 +8,18 @@ let result;
 export function load() {
     async function main() {
 
-        // await prisma.user.create({
-        //     data: {
-        //         name: 'Alice',
-        //         email: 'alice@prisma.io',
-        //         posts: {
-        //             create: { title: 'Hello World' },
-        //         },
-        //         profile: {
-        //             create: { bio: 'I like turtles' },
-        //         },
-        //     },
-        // })
+        await prisma.user.create({
+            data: {
+                name: 'Alice',
+                email: 'alice@prisma.io',
+                posts: {
+                    create: { title: 'Hello World' },
+                },
+                profile: {
+                    create: { bio: 'I like turtles' },
+                },
+            },
+        })
 
         const allUsers = await prisma.user.findMany({
             include: {
