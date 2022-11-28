@@ -33,6 +33,7 @@
   "type": "module",
   "dependencies": {
     "@prisma/client": "^4.6.1",
+    "@prisma/prisma-fmt-wasm": "^4.7.0-70.b4cb185c0ec9e0eca3256ffb515e317d8be0a874",
     "json-server": "^0.17.0",
     "prisma": "^4.6.1"
   }
